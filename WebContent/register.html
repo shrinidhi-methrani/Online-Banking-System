@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="validation.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <form onsubmit="return validation()" action="/BankProject/registervalidation" name="registerform">
+            <h1>Registration</h1>
+
+            <div class="input-box">
+                <div class="input-field" id="name">
+                    <input type="text" placeholder="Full Name" name="fname" required>
+                    <i class='bx bxs-user'></i>
+                     <span id="msg" class="formerror" style="color: red; font-size: 12px;"></span>
+                </div>
+
+                <div class="input-field" id="username">
+                    <input type="text" placeholder="Username" name="uname" required>
+                    <i class='bx bxs-user'></i>
+                     <span id="msg" class="formerror" style="color: red; font-size: 12px;"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field" id="email">
+                    <input type="email" placeholder="E-Mail ID" name="mail" required>
+                    <i class='bx bxs-envelope'></i>
+                     <span id="msg" class="formerror" style="color: red; font-size: 12px;"></span>
+                </div>
+
+                <div class="input-field" id="phonenum">
+                    <input type="number" placeholder="Phone Number" name="phone" required>
+                    <i class='bx bxs-phone'></i>
+                     <span id="msg" class="formerror" style="color: red; font-size: 12px;"></span>
+                </div>
+            </div>
+
+
+            <div class="input-box">
+                <div class="input-field" id="passw">
+                    <input type="password" placeholder="password" name="pass" required>
+                    <i class='bx bxs-lock-alt'></i>
+                     <span id="msg" class="formerror" style="color: red; font-size: 12px;"></span>
+                </div>
+
+                <div class="input-field" id="cpassw">
+                    <input type="password" placeholder="Confirm Password" name="cpass" required>
+                    <i class='bx bxs-lock-alt'></i>
+                     <span id="msg" class="formerror" style="color: red; font-size: 12px;"></span>
+                </div>
+            </div>
+
+            <div class="input-box" >
+                <div class="field" id="initbal">
+                    <input type="number" placeholder="Initial Deposit" name="balance" required>
+                    <i class='bx bx-rupee'></i>
+                     <span id="msg" class="formerror" style="color: red; font-size: 12px; margin-top: -10px;"></span>
+                </div>
+            </div>     
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>

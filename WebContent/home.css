@@ -1,0 +1,180 @@
+@CHARSET "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    min-height: 100vh;
+    background: url("about_2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.main
+{
+    display: inline-block;
+    margin-top: -65px;
+}
+
+.firstrow 
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -45px;
+}
+
+.secondrow
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -90px;
+}
+
+.wrapper
+{
+    width: 300px;
+    height: 350px;
+    background: transparent;
+    border: 2px solid transparent;
+    backdrop-filter: blur(75px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: inline-block;
+}
+.wrapper a
+{
+    text-decoration: none;
+}
+
+.wrapper i
+{
+    font-size: 250px;
+    margin-left: -17px;
+    color: black;
+}
+
+.wrapper h1
+{
+  color: black;
+  font-size: 23px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.imgbox
+{
+ height: 250px;
+ width: 270px;
+ background: url("loanimage.jpeg") no-repeat;
+ background-size: cover;
+ margin-left: -25px;
+}
+
+.changepassword
+{
+ height: 250px;
+ width: 270px;
+ background: url("changePassword.jpeg") no-repeat;
+ background-size: cover;
+ margin-left: -25px;
+ margin-top: 10px; 
+}
+
+.ChangeName
+{
+ height: 250px;
+ width: 270px;
+ background: url("ChangeName.png") no-repeat;
+ background-size: cover;
+ margin-left: -25px;
+ margin-top: 10px;
+}
+
+.MoneyTransfer
+{
+    height: 250px;
+    width: 270px;
+    background: url("moneytransfer1.png") no-repeat;
+    background-size: contain;
+    margin-left: -25px;
+    margin-top: 25px;   
+}
+
+.logo
+{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a
+{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before
+{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before
+{
+    width: 100%;
+}
+.navbar i
+{
+    position: absolute;
+    /* right: 20px; */
+    top: 50%;
+    padding-left: 5px;
+    transform: translateY(-60%); 
+    font-size: 20px;
+}
+.main
+{
+	height: 125px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items:end;
+    color: #fff;
+}
